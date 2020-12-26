@@ -1,0 +1,127 @@
+// vim:ts=4:sw=4:et
+{
+    // tabbed split container with 3 children
+    "border": "normal",
+    "floating": "auto_off",
+    "layout": "tabbed",
+    "percent": 1,
+    "type": "con",
+    "nodes": [
+        {
+            // splith split container with 2 children
+            "border": "normal",
+            "floating": "auto_off",
+            "layout": "splith",
+            "percent": 0.333333333333333,
+            "type": "con",
+            "nodes": [
+                {
+                    "border": "normal",
+                    "current_border_width": 2,
+                    "floating": "auto_off",
+                    "geometry": {
+                       "height": 400,
+                       "width": 640,
+                       "x": 0,
+                       "y": 30
+                    },
+                    "name": "abijeet @ freenode / #betawiki-rc - HexChat",
+                    "percent": 0.6,
+                    "swallows": [
+                       {
+                          "class": "^Hexchat$"
+                       }
+                    ],
+                    "type": "con"
+                },
+                {
+                    "border": "normal",
+                    "current_border_width": 2,
+                    "floating": "auto_off",
+                    "geometry": {
+                       "height": 841,
+                       "width": 428,
+                       "x": 1922,
+                       "y": 36
+                    },
+                    "name": "Telegram",
+                    "percent": 0.4,
+                    "swallows": [
+                       {
+                          "class": "^TelegramDesktop$"
+                       }
+                    ],
+                    "type": "con"
+                }
+            ]
+        },
+        {
+            "border": "normal",
+            "current_border_width": 2,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 859,
+               "width": 1436,
+               "x": 0,
+               "y": 0
+            },
+            "name": "Important - apatro@wikimedia.org - Mozilla Thunderbird",
+            "percent": 0.333333333333333,
+            "swallows": [
+               {
+                  "class": "^thunderbird$"
+               }
+            ],
+            "type": "con"
+        },
+        {
+            // splith split container with 2 children
+            "border": "normal",
+            "floating": "auto_off",
+            "layout": "splith",
+            "percent": 0.333333333333333,
+            "type": "con",
+            "nodes": [
+                {
+                    "border": "normal",
+                    "current_border_width": 2,
+                    "floating": "auto_off",
+                    "geometry": {
+                       "height": 841,
+                       "width": 860,
+                       "x": 1922,
+                       "y": 36
+                    },
+                    "name": "Slack | language-team | Wikimedia Foundation",
+                    "percent": 0.6,
+                    "swallows": [
+                       {
+						  "class": "^Slack$"
+                       }
+                    ],
+                    "type": "con"
+                },
+                {
+                    "border": "normal",
+                    "current_border_width": 2,
+                    "floating": "auto_off",
+                    "geometry": {
+                       "height": 859,
+                       "width": 1436,
+                       "x": 0,
+                       "y": 0
+                    },
+                    "name": "Skype",
+                    "percent": 0.4,
+                    "swallows": [
+                       {
+                          "class": "^Skype$"
+                       }
+                    ],
+                    "type": "con"
+                }
+            ]
+        }
+    ]
+}
+

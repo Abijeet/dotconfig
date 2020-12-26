@@ -1,0 +1,61 @@
+theme = "slick"
+icons = "awesome"
+
+# Toggle for:
+## Battery charging
+[[block]]
+block = "toggle"
+
+text = "Limit BAT"
+command_state = "cat /sys/class/power_supply/BAT0/charge_control_end_threshold | grep -v 100"
+command_on = "sudo ~/bin/toggle_battery_limit.sh"
+command_off = "sudo ~/bin/toggle_battery_limit.sh"
+interval = 15
+
+## Display
+[[block]]
+block = "toggle"
+
+text = "HDMI"
+command_state = "xrandr --listactivemonitors | grep HDMI1"
+command_on = "~/bin/display/activate_hdmi.sh"
+command_off = "~/bin/display/laptop_only.sh"
+interval = 10
+
+## VPN
+[[block]]
+block = "toggle"
+
+text = "VPN"
+command_state = "sudo wg show | grep 'interface: wg0'"
+command_on = "sudo wg-quick up wg0"
+command_off = "sudo wg-quick down wg0"
+interval = 15
+
+## Disable mousepad
+[[block]]
+block = "toggle"
+
+text = "Touchpad"
+command_state = "~/bin/touchpad_is_enabled.sh"
+command_on = "~/bin/toggle_touchpad.sh"
+command_off = "~/bin/toggle_touchpad.sh"
+interval = 8
+
+[[block]]
+block = "battery"
+interval = 12
+format = "{percentage}% {time}"
+
+[[block]]
+block = "backlight"
+device = "intel_backlight"
+
+[[block]]
+block = "sound"
+step_width = 3
+
+[[block]]
+block = "time"
+interval = 45
+format = "%a %d %h %R"
