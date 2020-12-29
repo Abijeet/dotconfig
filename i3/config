@@ -241,8 +241,7 @@ exec --no-startup-id i3-msg "workspace $ws3; append_layout ~/.config/i3/workspac
 exec --no-startup-id i3-msg "exec ~/Apps/Telegram/Telegram; exec skypeforlinux; exec thunderbird; exec hexchat; exec slack";
 
 ## terminal
-exec --no-startup-id i3-msg "workspace $ws4; append_layout ~/.config/i3/workspace-term.json"
-exec --no-startup-id i3-msg "exec terminator; exec geany";
+exec --no-startup-id i3-msg "workspace $ws4; exec terminator; exec geany";
 
 ## www
 exec --no-startup-id i3-msg "workspace $ws2; exec firefox; exec ~/.joplin/Joplin.AppImage --no-sandbox;'"
