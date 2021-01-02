@@ -37,7 +37,8 @@ bindsym $mod+Shift+q kill
 
 # start rofi (a program launcher)
 # bindsym $mod+d exec dmenu_run
-bindsym $mod+d exec rofi -show run -opacity "85"
+bindsym $mod+d exec rofi -show run
+bindsym $mod+Tab exec rofi -show window
 
 # change focus
 bindsym $mod+j focus left
