@@ -26,7 +26,7 @@
                        "y": 30
                     },
                     "name": "abijeet @ freenode / #betawiki-rc - HexChat",
-                    "percent": 0.6,
+                    "percent": 0.75,
                     "swallows": [
                        {
                           "class": "^Hexchat$"
@@ -45,7 +45,7 @@
                        "y": 36
                     },
                     "name": "Telegram",
-                    "percent": 0.4,
+                    "percent": 0.25,
                     "swallows": [
                        {
                           "class": "^TelegramDesktop$"

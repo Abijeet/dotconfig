@@ -170,6 +170,11 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+##############################
+# Setup screen resolutions
+##############################
+exec --no-startup-id "sh -c 'exec ~/bin/display/xrandr_display.sh'"
+
 ########################
 # Start i3rust bar
 ########################
@@ -208,11 +213,6 @@ bar {
     }
 }
 
-##############################
-# Setup screen resolutions
-##############################
-exec --no-startup-id "sh -c 'sleep 1;exec ~/bin/display/xrandr_display.sh'"
-
 ############
 # Colors
 ############
@@ -233,9 +233,8 @@ exec --no-startup-id i3-msg "exec nm-applet;"
 exec --no-startup-id i3-msg "exec blueman-applet;"
 
 ## code
-exec --no-startup-id i3-msg "workspace $ws1; append_layout ~/.config/i3/workspace-code.json"
-exec --no-startup-id i3-msg "exec code;"
-exec --no-startup-id i3-msg "exec ~/Apps/Nextcloud-2.6.5-x86_64.AppImage;"
+exec --no-startup-id i3-msg "workspace $ws1; exec code;"
+exec --no-startup-id i3-msg "exec ~/Apps/Nextcloud-3.1.1-x86_64.AppImage;"
 
 ## social
 exec --no-startup-id i3-msg "workspace $ws3; append_layout ~/.config/i3/workspace-social.json"
