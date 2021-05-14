@@ -238,7 +238,7 @@ exec --no-startup-id i3-msg "exec ~/Apps/Nextcloud-3.1.1-x86_64.AppImage;"
 
 ## social
 exec --no-startup-id i3-msg "workspace $ws3; append_layout ~/.config/i3/workspace-social.json"
-exec --no-startup-id i3-msg "exec ~/Apps/Telegram/Telegram; exec skypeforlinux; exec thunderbird; exec hexchat; exec slack";
+exec --no-startup-id i3-msg "exec ~/Apps/Telegram/Telegram; exec thunderbird; exec hexchat; exec slack";
 
 ## terminal
 exec --no-startup-id i3-msg "workspace $ws4; exec terminator; exec geany";
