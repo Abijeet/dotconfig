@@ -1,5 +1,5 @@
 #!/bin/sh
-# Check and enable HDMI if connected
+# Check and enable HDMI output if connected
 extern=HDMI1
 
 if xrandr | grep "$extern connected"; then

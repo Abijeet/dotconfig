@@ -9,6 +9,9 @@
 # Source: https://github.com/stagnation/i3-battery-warning/blob/master/i3batwarn.sh
 #############################################
 
+# Configureed via crontab
+# */2 * * * * /home/abijeet/bin/i3_battery_warn.sh > /tmp/batterywarn.log
+
 # lock file location
 export LOCK_FILE='/tmp/battery_state.lock'
 

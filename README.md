@@ -33,5 +33,5 @@ Copy these over to `~/bin` folder.
 ## xbindkeys
 Xbindkeys is used to configure the "multimedia/special" keys on the laptop
 
-Copy contents of `xbindkeys` to home directory.
+Copy contents of `xbindkeys` and `.xsessionrc` to the home directory.
 

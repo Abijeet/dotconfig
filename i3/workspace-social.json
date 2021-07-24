@@ -1,6 +1,6 @@
 // vim:ts=4:sw=4:et
 {
-   // tabbed split container with 3 children
+   // tabbed split container with 4 children
    "border": "normal",
    "floating": "auto_off",
    "layout": "tabbed",
@@ -26,7 +26,7 @@
                       "y": 30
                    },
                    "name": "abijeet @ freenode / #betawiki-rc - HexChat",
-                   "percent": 0.75,
+                   "percent": 0.68,
                    "swallows": [
                       {
                          "class": "^Hexchat$"
@@ -45,7 +45,7 @@
                       "y": 36
                    },
                    "name": "Telegram",
-                   "percent": 0.25,
+                   "percent": 0.32,
                    "swallows": [
                       {
                          "class": "^TelegramDesktop$"
@@ -86,7 +86,23 @@
               }
            ],
            "type": "con"
-        }
+        },
+        {
+         "border": "normal",
+         "current_border_width": 2,
+         "floating": "auto_off",
+         "geometry": {
+            "x": 0,
+            "y": 0
+         },
+         "name": "Chat | Microsoft Teams",
+         "swallows": [
+            {
+            "class": "^Microsoft\\ Teams\\ \\-\\ Preview$"
+            }
+         ],
+         "type": "con"
+     }
    ]
 }
 
